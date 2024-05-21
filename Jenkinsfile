@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
+        stage('Clone') {
             steps {
                 git 'https://github.com/srigopu12/automation-deployment.git'
             }
