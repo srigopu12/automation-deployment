@@ -9,6 +9,7 @@ resource "aws_instance" "web" {
   # Specify the instance type, AMI, and other configuration options
   instance_type = "t2.micro"
   ami = "ami-0cc9838aa7ab1dce7"
+  subnet_id = "subnet-0607ae396e016bea4"
   # Other configuration options...
 
   # Specify any additional settings or configurations for the instance
