@@ -29,6 +29,7 @@ sudo ./aws/install
 6. aws configure in console
 7. log into jenkins console
 8.cat /var/lib/jenkins/secrets/initialAdminPassword
+9. install plugins - git , terraform and ansible.
 
 
 
