@@ -10,7 +10,7 @@ pipeline {
         
         stage('Terraform Init') {
             steps {
-                sh 'cd my-project && terraform init'
+                sh 'cd my-project && terraform init -lock-timeout=10m'
             }
         }
         
