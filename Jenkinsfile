@@ -33,12 +33,4 @@ pipeline {
         }
     }
     
-    post {
-        success {
-            // Perform cleanup actions, notifications, etc.
-        }
-        failure {
-            // Handle failure scenarios
-        }
-    }
-}
+    
