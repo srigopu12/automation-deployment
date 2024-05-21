@@ -2,15 +2,15 @@ pipeline {
     agent any
     
     stages {
-        stage('Clone') {
+        stage('checkout') {
             steps {
-                git 'https://github.com/srigopu12/automation-deployment.git'
+                git branch:'main',url:'https://github.com/srigopu12/automation-deployment.git'
             }
         }
         
         stage('Terraform Init') {
             steps {
-                sh 'cd my-project && terraform init -lock-timeout=10m'
+                sh 'cd my-project && terraform init '
             }
         }
         
