@@ -1,0 +1,11 @@
+# playbook.yml
+- name: Configure EC2 Instances
+  hosts: ec2
+  tasks:
+    - name: Install Apache
+      become: true
+      apt:
+        name: apache2
+        update_cache: yes
+        state: present
+    # Other configuration tasks...
