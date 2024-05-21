@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 
-resource "aws_instance" "web" {
+resource "aws_instance" "web":{
   # Specify the instance type, AMI, and other configuration options
   instance_type = "t2.micro"
   ami = "ami-0cc9838aa7ab1dce7"
